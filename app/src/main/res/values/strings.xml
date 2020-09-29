@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">IntProj</string>
+    <string name="Msg1">Update And Delete Menu</string>
+    <string name="Msg2">Enter Menu number</string>
+    <string name="Msg3">Edit menu</string>
+    <string name="Msg4">Delete menu</string>
+    <string name="Msg5">Enter Food Name</string>
+    <string name="Msg6">Enter Food Price</string>
+    <string name="Msg7">Insert Menu</string>
+    <string name="Msg8">Insert </string>
+    <string name="Msg9">Check Menu</string>
+    <string name="Msg10">Menu Home</string>
+    <string name="Msg11">Menu 1</string>
+    <string name="Msg13">Menu 2</string>
+    <string name="Msg12">Menu 3</string>
+    <string name="Msg14">Main Menu </string>
+    <string name="himdid">Enter The Menu Number</string>
+    <string name="hintfod">Enter The Food Name</string>
+    <string name="hintprice">Enter The Price</string>
+    <string name="Saveb">Save</string>
+    <string name="ShowB">Show</string>
+    <string name="UpdateB">Update</string>
+    <string name="DeleteB">Delete</string>
+    <string name="Edit">EDIT MENU</string>
 </resources>
