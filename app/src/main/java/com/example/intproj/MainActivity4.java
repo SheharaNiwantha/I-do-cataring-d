@@ -38,7 +38,7 @@ public class MainActivity4 extends AppCompatActivity {
 
         Mname = new MenuName();
 
-        butDelete.setOnClickListener(new View.OnClickListener() {
+        /*butDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("MenuName/Mname1");
@@ -46,7 +46,7 @@ public class MainActivity4 extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Successfull Deleted",Toast.LENGTH_SHORT).show();
 
             }
-        });
+        });*/
 
         butupdate.setOnClickListener(new View.OnClickListener() {
             @Override
