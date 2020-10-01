@@ -22,4 +22,31 @@
     <string name="UpdateB">Update</string>
     <string name="DeleteB">Delete</string>
     <string name="Edit">EDIT MENU</string>
+
+    <string name="order">*You can do your changes up to 3 days prior to required date only</string>
+    <string name="Order1">Order 01</string>
+    <string name="Order2">Order 02</string>
+    <string name="Order3">Order 03</string>
+    <string name="BtnSearch">search</string>
+    <string name="BtnSave_changes">Save Changes</string>
+    <string name="Customer_name">Kasun Silva</string>
+    <string name="Customer_email">silva@gmail.com</string>
+    <string name="Customer_contact_number">0711234567</string>
+    <string name="Customer_address">55,Park Street,Colombo</string>
+    <string name="Customer_plates">150</string>
+    <string name="Customer_date">20/07/2020</string>
+    <string name="Customer_time">11.00 AM</string>
+    <string name="msg">You can cancel free of charge up to 2 days prior to required date. Are you sure cancel this order?</string>
+    <string name="Admin_msg">Enter customer name here</string>
+    <string name="Admin_msg2">Search Order Details</string>
+    <string name="tvName">Name</string>
+    <string name="place_order">Place Order</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="time">Time</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="menu_number">Menu Number</string>
+    <string name="date">Date</string>
+    <string name="number_of_plates">Number of plates</string>
+    <string name="address">Address</string>
 </resources>
