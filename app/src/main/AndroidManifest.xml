@@ -15,7 +15,11 @@
         <activity android:name=".Menu3" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainMenu"/>
+        <activity android:name=".MainMenu"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
 
         <activity android:name=".orderUpdate"></activity>
         <activity android:name=".orderSearch" />
@@ -23,11 +27,7 @@
         <activity android:name=".orderDisplay" />
         <activity android:name=".orderDelete" />
         <activity android:name=".InsertOrder">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
