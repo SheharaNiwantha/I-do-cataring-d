@@ -255,8 +255,8 @@
         app:layout_constraintVertical_bias="0.676" />
 
     <LinearLayout
-        android:layout_width="321dp"
-        android:layout_height="48dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -267,15 +267,17 @@
 
         <Button
             android:id="@+id/btnPre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_button"
             android:text="Privew Data"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnUpdate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_button"
             android:onClick="displayToast"
             android:text="@string/BtnSave_changes"
             android:textSize="18sp"
