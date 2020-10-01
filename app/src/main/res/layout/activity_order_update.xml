@@ -244,7 +244,7 @@
         android:id="@+id/tvUpdate"
         android:layout_width="370dp"
         android:layout_height="69dp"
-        android:text="@string/Msg1"
+        android:text="@string/order"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

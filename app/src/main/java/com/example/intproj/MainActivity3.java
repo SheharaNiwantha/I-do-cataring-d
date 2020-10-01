@@ -16,7 +16,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        button4 = findViewById(R.id.button8);
+        button4 = findViewById(R.id.button4);
 
     }
     @Override
