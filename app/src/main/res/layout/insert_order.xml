@@ -10,6 +10,7 @@
         android:id="@+id/btnOrder"
         android:layout_width="188dp"
         android:layout_height="55dp"
+        android:background="@drawable/custom_button"
         android:text="@string/place_order"
         android:textAlignment="center"
         android:textSize="18sp"

@@ -49,4 +49,7 @@
     <string name="date">Date</string>
     <string name="number_of_plates">Number of plates</string>
     <string name="address">Address</string>
+    <string name="update_order">Update order</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="recent">Recent :</string>
 </resources>
