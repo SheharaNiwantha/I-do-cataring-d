@@ -9,26 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity4"></activity>
+        <activity android:name=".MainActivity4" />
         <activity android:name=".CheckFood" />
         <activity android:name=".Menuu2" />
         <activity android:name=".Menu3" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainMenu"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
-
-        <activity android:name=".orderUpdate"></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".orderUpdate" />
         <activity android:name=".orderSearch" />
         <activity android:name=".orders" />
         <activity android:name=".orderDisplay" />
         <activity android:name=".orderDelete" />
-        <activity android:name=".InsertOrder">
-
-        </activity>
+        <activity android:name=".InsertOrder"></activity>
     </application>
 
 </manifest>
