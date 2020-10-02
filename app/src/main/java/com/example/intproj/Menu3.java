@@ -18,7 +18,7 @@ public class Menu3 extends AppCompatActivity {
         setContentView(R.layout.activity_menu3);
 
 
-        button12 = findViewById(R.id.button8);
+        button12 = findViewById(R.id.button12);
 
     }
     @Override
