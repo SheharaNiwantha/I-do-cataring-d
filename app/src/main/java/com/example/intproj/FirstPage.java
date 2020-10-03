@@ -37,7 +37,7 @@ public class FirstPage extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(FirstPage.this, MainMenu.class);
+                Intent intent = new Intent(FirstPage.this, signIn.class);
                 startActivity(intent);
                 finish();
             }

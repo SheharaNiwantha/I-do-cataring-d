@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".signIn"></activity>
         <activity android:name=".FirstPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,19 +23,15 @@
         <activity android:name=".Menu3" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainMenu">
-
-        </activity>
+        <activity android:name=".MainMenu"></activity>
         <activity android:name=".orderUpdate" />
         <activity android:name=".orderSearch" />
         <activity android:name=".orders" />
         <activity android:name=".orderDisplay" />
         <activity android:name=".orderDelete" />
         <activity android:name=".InsertOrder" />
-
         <activity android:name=".Register" />
-        <activity android:name=".feedback"></activity>
-
+        <activity android:name=".feedback" />
 
         <meta-data
             android:name="preloaded_fonts"
