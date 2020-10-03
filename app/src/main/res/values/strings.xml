@@ -59,7 +59,7 @@
     <string name="address">Address</string>
     <string name="menu_number">Menu Number</string>
     <string name="number_plates">Number Of Plates</string>
-    <string name="date">Date</string>
-    <string name="time">Time</string>
+    <string name="date">Date (dd/mm/yyyy)</string>
+    <string name="time">Time (00:00 AM/PM)</string>
     <string name="update_your_order">Update Your Order Here</string>
 </resources>

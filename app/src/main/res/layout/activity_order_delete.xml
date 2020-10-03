@@ -6,6 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".orderDelete">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="#fece2f"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-6dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="129dp"
+            android:layout_height="105dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/meal" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="27dp"
+            android:fontFamily="@font/bungee"
+
+            android:text="Delete order"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/tvDelete"
         android:layout_width="349dp"
@@ -15,34 +47,39 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.34" />
 
     <Button
         android:id="@+id/btnNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
+        android:layout_width="88dp"
+        android:layout_height="37dp"
+        android:background="#000"
         android:text="No"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.287"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.477" />
 
     <Button
         android:id="@+id/btnYes1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
+        android:layout_width="88dp"
+        android:layout_height="37dp"
+        android:background="#000"
         android:text="Yes"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.477" />
 </androidx.constraintlayout.widget.ConstraintLayout>

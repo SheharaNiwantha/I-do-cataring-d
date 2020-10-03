@@ -24,17 +24,16 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="280dp"
+            android:layout_width="241dp"
             android:layout_height="106dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="@font/bungee"
             android:text="@string/update_your_order"
             android:textColor="#000"
-            android:textSize="30sp"
-           />
+            android:textSize="30sp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -271,6 +270,19 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/tvUpdate"
+        android:layout_width="370dp"
+        android:layout_height="69dp"
+        android:text="@string/order"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
 
     <LinearLayout
         android:layout_width="320dp"
