@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,9 +21,10 @@ import com.google.firebase.database.ValueEventListener;
 public class InsertOrder extends AppCompatActivity {
 
     EditText editTextName, editTextEmailAddress, editTextNumber, editTextMultiLineAddress, editTextNumberMenu, editTextNumberPlates, editTextDate, editTextTime;
-    Button btnOrder;
+    Button btnOrder, btnTotalPrice;
     DatabaseReference dbRef;
     OrderDB ord;
+    TextView tvCal;
 
 
 
@@ -44,6 +46,7 @@ public class InsertOrder extends AppCompatActivity {
         setContentView(R.layout.insert_order);
 
         btnOrder = findViewById(R.id.btnOrder);
+        btnTotalPrice = findViewById(R.id.btnTotalPrice);
 
         editTextName = findViewById((R.id.editTextNameI));
         editTextEmailAddress = findViewById((R.id.editTextEmailAddressI));
@@ -53,6 +56,8 @@ public class InsertOrder extends AppCompatActivity {
         editTextNumberPlates = findViewById((R.id.editTextNumberPlatesI));
         editTextDate = findViewById((R.id.editTextDateI));
         editTextTime = findViewById((R.id.editTextTimeI));
+
+        tvCal = findViewById((R.id.tvCal));
 
         ord = new OrderDB();
 
@@ -111,6 +116,28 @@ public class InsertOrder extends AppCompatActivity {
             }
         });
 
+
+        btnTotalPrice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int plates = Integer.parseInt(editTextNumberPlates.getText().toString());
+                int menu = Integer.parseInt(editTextNumberMenu.getText().toString());
+
+                if (menu == 1){
+                int sum = plates * 1400;
+                tvCal.setText("Total Price = RS: " + String.valueOf(sum));}
+                else if(menu == 2){
+                    int sum = plates * 1600;
+                    tvCal.setText("Total Price = RS: " + String.valueOf(sum));
+                }
+                else if (menu == 3) {
+                    int sum = plates * 2000;
+                    tvCal.setText("Total Price = RS: " + String.valueOf(sum));
+                }
+
+            }
+
+        });
 
     }
 
