@@ -59,7 +59,7 @@
                 android:id="@+id/editTextNameI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:inputType="textPersonName"
                 android:textColorLink="@color/common_google_signin_btn_text_light_pressed"
                 android:textSize="18sp" />
@@ -77,7 +77,7 @@
                 android:id="@+id/editTextEmailAddressI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -92,7 +92,7 @@
                 android:id="@+id/editTextNumberI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contact Number"
+                android:hint="@string/contact_number"
                 android:inputType="number" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -107,7 +107,7 @@
                 android:id="@+id/editTextMultiLineAddressI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address"
+                android:hint="@string/address"
                 android:inputType="textMultiLine" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -122,7 +122,7 @@
                 android:id="@+id/editTextNumberMenuI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Menu Number"
+                android:hint="@string/menu_number"
                 android:inputType="number" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -137,7 +137,7 @@
                 android:id="@+id/editTextNumberPlatesI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Number Of Plates"
+                android:hint="@string/number_plates"
                 android:inputType="number" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -150,7 +150,7 @@
                     android:id="@+id/editTextDateI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Date"
+                    android:hint="@string/date"
                     android:inputType="textPersonName"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -166,7 +166,7 @@
                     android:id="@+id/editTextTimeI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Time"
+                    android:hint="@string/time"
                     android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>

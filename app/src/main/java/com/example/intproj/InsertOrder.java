@@ -23,7 +23,7 @@ public class InsertOrder extends AppCompatActivity {
     Button btnOrder;
     DatabaseReference dbRef;
     OrderDB ord;
-    long maxId=0;
+
 
 
     private void clearControls() {
@@ -56,23 +56,12 @@ public class InsertOrder extends AppCompatActivity {
 
         ord = new OrderDB();
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("OrderDB");
-        dbRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists())
-                    maxId=(dataSnapshot.getChildrenCount());
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dbRef = FirebaseDatabase.getInstance().getReference().child("OrderDB");
 
 
                 try {
@@ -103,7 +92,8 @@ public class InsertOrder extends AppCompatActivity {
                         ord.setTime(editTextTime.getText().toString().trim());
 
                         //insert into database
-                        dbRef.child(String.valueOf(maxId+1)).setValue(ord);
+                        dbRef.child("Order1").setValue(ord);
+
 
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();

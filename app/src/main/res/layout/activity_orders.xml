@@ -6,6 +6,21 @@
     android:orientation="vertical"
     tools:context=".orders">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="#fece2f"
+        android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="129dp"
+        android:layout_height="105dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/meal" />
+    </RelativeLayout>
+
+
     <TextView
         android:id="@+id/tvRecent2"
         android:layout_width="wrap_content"
@@ -36,16 +51,21 @@
             android:id="@+id/btnUpdate3"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_button"
+            android:background="#000"
             android:text="@string/update_order"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnDelete3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_button"
+            android:background="#000"
+            android:textColor="#fff"
+            android:textSize="18sp"
             android:text="@string/cancel_order" />
+
     </LinearLayout>
 
 
