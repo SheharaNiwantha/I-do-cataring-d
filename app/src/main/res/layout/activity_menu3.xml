@@ -178,7 +178,7 @@
     <LinearLayout
         android:layout_width="448dp"
         android:layout_height="118dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="#FEE12B"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +193,7 @@
         android:layout_height="763dp"
         android:text="@string/Msg12"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="90px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

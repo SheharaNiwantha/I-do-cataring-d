@@ -17,10 +17,9 @@
         android:textSize="80px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.893" />
 
     <Button
         android:id="@+id/button8"
@@ -31,16 +30,16 @@
         android:textSize="80px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.548" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="407dp"
-        android:layout_height="175dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_width="421dp"
+        android:layout_height="160dp"
+        android:background="#FEE12B"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +51,7 @@
         android:layout_width="225dp"
         android:layout_height="61dp"
         android:text="@string/Msg10"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="100px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,10 +66,10 @@
         android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
+        app:layout_constraintVertical_bias="0.399"
         app:srcCompat="@drawable/acd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
