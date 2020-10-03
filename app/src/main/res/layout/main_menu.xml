@@ -11,17 +11,17 @@
         android:id="@+id/button9"
         android:layout_width="160dp"
         android:layout_height="100dp"
+        android:background="@drawable/custom_button"
         android:text="Menu 1
                       Rs.1400.00"
         android:textAllCaps="false"
         android:textSize="30sp"
-        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.392" />
+        app:layout_constraintVertical_bias="0.259" />
 
     <Button
         android:id="@+id/button11"
@@ -33,10 +33,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.753" />
 
     <Button
         android:id="@+id/button7"
@@ -49,38 +49,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.66" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="49dp"
-        android:background="?attr/colorError"
-        android:text="Menu 1"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_red_light"
-        android:text="Menu 3"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.505" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -113,7 +85,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.397"
+        app:layout_constraintVertical_bias="0.247"
         app:srcCompat="@drawable/fb" />
 
     <ImageView
@@ -122,24 +94,11 @@
         android:layout_height="122dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.957"
+        app:layout_constraintVertical_bias="0.769"
         app:srcCompat="@drawable/ag" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_red_light"
-        android:text="Menu 2"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -148,10 +107,50 @@
         android:src="@drawable/addd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975">
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_user"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="79dp"
+            android:layout_height="68dp"
+            app:srcCompat="@drawable/ic_fav"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_admin"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

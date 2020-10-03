@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/date"
-                    android:inputType="textPersonName"/>
+                    android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -173,38 +173,41 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnTotalPrice"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="20dp"
-            android:background="#00000000"
-            android:elevation="0dp"
-            android:fontFamily="serif"
-            android:text="See my total price"
-            android:textColor="#000" />
+        <LinearLayout
+            android:layout_width="586dp"
+            android:layout_height="33dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvCal"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            <Button
+                android:id="@+id/btnTotalPrice"
+                android:layout_width="193dp"
+                android:layout_height="23dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:elevation="0dp"
+                android:fontFamily="serif"
+                android:text="See my total price"
+                android:textColor="#000" />
 
-        <Button
-            android:id="@+id/btnOrder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="#000"
-            android:text="@string/place_order"
-            android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tvCal"
+                android:layout_width="127dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:text="@string/place_order"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
 
     </LinearLayout>
-
 
 
 </LinearLayout>

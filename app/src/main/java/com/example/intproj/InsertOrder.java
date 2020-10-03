@@ -3,6 +3,7 @@ package com.example.intproj;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -109,8 +110,7 @@ public class InsertOrder extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
 
                 }
-                Intent intent = new Intent(InsertOrder.this, orders.class);
-                startActivity(intent);
+
 
 
             }
