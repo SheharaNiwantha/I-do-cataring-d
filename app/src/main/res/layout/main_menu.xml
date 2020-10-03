@@ -58,7 +58,7 @@
         android:id="@+id/button"
         android:layout_width="110dp"
         android:layout_height="49dp"
-        android:background="@android:color/holo_red_light"
+        android:background="?attr/colorError"
         android:text="Menu 1"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,7 +86,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="410dp"
         android:layout_height="111dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="#fece2f"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +100,7 @@
             android:layout_width="288dp"
             android:layout_height="115dp"
             android:text="     Main Menu"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/background_dark"
             android:textSize="36sp" />
     </LinearLayout>
 

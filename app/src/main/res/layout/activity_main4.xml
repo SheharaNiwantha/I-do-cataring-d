@@ -16,25 +16,32 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/logoImage"
-        android:layout_width="129dp"
-        android:layout_height="105dp"
-        android:contentDescription="TODO"
-        android:src="@drawable/meal" />
-
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="270dp"
-            android:layout_height="106dp"
+            android:layout_width="271dp"
+            android:layout_height="96dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="-12dp"
-            android:layout_marginBottom="17dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
             android:fontFamily="@font/bungee"
             android:text="Edit Menu "
             android:textColor="#000"
-            android:textSize="36sp" />
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="129dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="342dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/meal" />
     </RelativeLayout>
 
     <ImageView
@@ -112,4 +119,5 @@
             android:text="@string/DeleteB"
             android:textSize="24sp" />
     </LinearLayout>
+
 </LinearLayout>
