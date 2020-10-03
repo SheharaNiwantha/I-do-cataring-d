@@ -63,4 +63,16 @@
     <string name="time">Time (00:00 AM/PM)</string>
     <string name="update_your_order">Update Your Order Here</string>
     <string name="search_food">Search food</string>
+    <string name="hintname">Enter Name</string>
+    <string name="hintLName">Enter Name</string>
+    <string name="hintemail">Enter Email</string>
+    <string name="hintpassword">Enter Password</string>
+    <string name="hintenterPassword">Enter Password</string>
+    <string name="registerB">REGISTER</string>
+    <string name="hintfname">Enter Name</string>
+    <string name="hintfbemail">Enter Email</string>
+    <string name="hintbdfeedB">Enter Your Feedback</string>
+    <string name="sendb">Send</string>
+    <string name="UpdateAB">Update</string>
+    <string name="DeleteBA">Delete</string>
 </resources>

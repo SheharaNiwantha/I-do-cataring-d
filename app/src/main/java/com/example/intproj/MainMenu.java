@@ -15,7 +15,7 @@ public class MainMenu extends AppCompatActivity {
     Button btn1;
     Button btn2;
 
-    ImageButton imageButton12, imageButton11;
+    ImageButton imageButton12, imageButton11, imageButton10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainMenu extends AppCompatActivity {
         btn2 = findViewById(R.id.button11);
         imageButton12 = findViewById(R.id.imageButton12);
         imageButton11 = findViewById(R.id.imageButton11);
+        imageButton10 = findViewById(R.id.imageButton10);
     }
 
     @Override
@@ -74,6 +75,16 @@ public class MainMenu extends AppCompatActivity {
 
             }
         });
+        imageButton10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2= new Intent( MainMenu.this, feedback.class);
+
+                startActivity(intent2);
+
+            }
+        });
+
 
 
     }
