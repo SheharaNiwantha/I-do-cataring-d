@@ -181,7 +181,8 @@ Mix Vegetable Salad"
         android:background="#fece2f"
         android:padding="20dp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <ImageView
             android:id="@+id/logoImage"
@@ -192,11 +193,15 @@ Mix Vegetable Salad"
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="168dp"
+            android:layout_width="243dp"
             android:layout_height="106dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="65dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/bungee"
             android:text="Menu 1"

@@ -7,31 +7,42 @@
     android:background = "@drawable/gradiend_background"
     tools:context=".CheckFood">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="512dp"
-        android:layout_height="156dp"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="vertical"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="#fece2f"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="225dp"
-        android:layout_height="61dp"
-        android:text="@string/Msg9"
-        android:textColor="@color/colorAccent"
-        android:textSize="100px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="129dp"
+            android:layout_height="105dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/meal" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="189dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/bungee"
+            android:text="@string/search_food"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView8"
