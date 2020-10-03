@@ -45,14 +45,14 @@ public class InsertOrder extends AppCompatActivity {
 
         btnOrder = findViewById(R.id.btnOrder);
 
-        editTextName = findViewById((R.id.editTextName));
-        editTextEmailAddress = findViewById((R.id.editTextEmailAddress));
-        editTextNumber = findViewById((R.id.editTextNumber));
-        editTextMultiLineAddress = findViewById((R.id.editTextMultiLineAddress));
-        editTextNumberMenu = findViewById((R.id.editTextNumberMenu));
-        editTextNumberPlates = findViewById((R.id.editTextNumberPlates));
-        editTextDate = findViewById((R.id.editTextDate));
-        editTextTime = findViewById((R.id.editTextTime));
+        editTextName = findViewById((R.id.editTextNameI));
+        editTextEmailAddress = findViewById((R.id.editTextEmailAddressI));
+        editTextNumber = findViewById((R.id.editTextNumberI));
+        editTextMultiLineAddress = findViewById((R.id.editTextMultiLineAddressI));
+        editTextNumberMenu = findViewById((R.id.editTextNumberMenuI));
+        editTextNumberPlates = findViewById((R.id.editTextNumberPlatesI));
+        editTextDate = findViewById((R.id.editTextDateI));
+        editTextTime = findViewById((R.id.editTextTimeI));
 
         ord = new OrderDB();
 

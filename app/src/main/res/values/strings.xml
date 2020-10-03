@@ -52,4 +52,5 @@
     <string name="update_order">Update order</string>
     <string name="cancel_order">Cancel Order</string>
     <string name="recent">Recent :</string>
+    <string name="order_now">Order Now !</string>
 </resources>
