@@ -180,25 +180,25 @@
 
             <Button
                 android:id="@+id/btnTotalPrice"
-                android:layout_width="161dp"
+                android:layout_width="wrap_content"
                 android:layout_height="23dp"
                 android:layout_margin="5dp"
                 android:layout_marginTop="20dp"
                 android:background="#00000000"
                 android:elevation="0dp"
                 android:fontFamily="serif"
-                android:text="See my total price"
+                android:text="Total price"
                 android:textAlignment="textStart"
                 android:textColor="#000" />
 
             <TextView
                 android:id="@+id/tvCal"
-                android:layout_width="155dp"
+                android:layout_width="132dp"
                 android:layout_height="29dp" />
 
             <Button
                 android:id="@+id/btnOrder"
-                android:layout_width="231dp"
+                android:layout_width="156dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#000"
