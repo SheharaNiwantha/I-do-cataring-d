@@ -1,5 +1,7 @@
 package com.example.intproj;
-    //submanin class
+    //subman
+    //
+    // class
 public class MenuName {
 
     private String menu;
