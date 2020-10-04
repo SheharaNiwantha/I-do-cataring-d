@@ -30,7 +30,7 @@ public class PaymentDelete extends AppCompatActivity {
         btnNo = findViewById(R.id.btnNo);
 
         btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
+            @Override                                      //Deleting records
             public void onClick(View view) {
                 dbDel = FirebaseDatabase.getInstance().getReference().child("PaymentDB");
                 dbDel.addListenerForSingleValueEvent(new ValueEventListener() {

@@ -5,6 +5,7 @@ public class PaymentDB {
     private String cvv;
     private String pNumber;
 
+    //Constructors, Getters and Setters
     public String getcNumber() {
         return cNumber;
     }

@@ -30,11 +30,12 @@ public class Payment extends AppCompatActivity {
         cardForm.cardRequired(true)
                 .expirationRequired(true)
                 .cvvRequired(true)
-                //.postalCodeRequired(true)
                 .mobileNumberRequired(true)
                 .mobileNumberExplanation("SMS is required on this number")
                 .setup(Payment.this);
+        //hides the content as in passwords
         cardForm.getCvvEditText().setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_VARIATION_PASSWORD);
+        //the alert box which gives the details filled by the user
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,7 +45,6 @@ public class Payment extends AppCompatActivity {
                     alertBuilder.setMessage("Card number: " + cardForm.getCardNumber() + "\n" +
                             "Card expiry date: " + Objects.requireNonNull(cardForm.getExpirationDateEditText().getText()).toString() + "\n" +
                             "Card CVV: " + cardForm.getCvv() + "\n" +
-                            //"Postal code: " + cardForm.getPostalCode() + "\n" +
                             "Phone number: " + cardForm.getMobileNumber());
                     alertBuilder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
                         @Override
@@ -63,7 +63,7 @@ public class Payment extends AppCompatActivity {
                     alertDialog.show();
 
                 } else {
-                    Toast.makeText(Payment.this, "Please complete the form", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Payment.this, "Please complete the form", Toast.LENGTH_LONG).show(); //If the user have not filled the form properly
                 }
             }
         });
