@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
-
+    //create varibales
     Button btn4;
     Button btn6;
 
@@ -23,7 +23,6 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
