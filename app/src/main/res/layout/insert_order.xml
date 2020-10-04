@@ -201,10 +201,10 @@
                 android:layout_width="156dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
-                android:background="#000"
+                android:background="@drawable/custom_button"
                 android:text="@string/place_order"
                 android:textAlignment="center"
-                android:textColor="#fff"
+                android:textColor="#000"
                 android:textSize="18sp" />
         </LinearLayout>
 
