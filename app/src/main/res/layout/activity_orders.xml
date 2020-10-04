@@ -51,18 +51,19 @@
             android:id="@+id/btnUpdate3"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
-            android:background="#000"
+            android:background="@drawable/custom_button"
+
             android:text="@string/update_order"
             android:textAlignment="center"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/btnDelete3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#000"
-            android:textColor="#fff"
+            android:background="@drawable/custom_button"
+            android:textColor="#000"
             android:textSize="18sp"
             android:text="@string/cancel_order" />
 

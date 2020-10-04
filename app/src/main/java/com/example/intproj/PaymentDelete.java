@@ -40,7 +40,7 @@ public class PaymentDelete extends AppCompatActivity {
 
                             dbDel = FirebaseDatabase.getInstance().getReference().child("PaymentDB").child("Payment1");
                             dbDel.removeValue();
-                            Toast.makeText(PaymentDelete.this,"Your cancellation is successfully. Thank you!.",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PaymentDelete.this,"Deleted Successfully",Toast.LENGTH_SHORT).show();
                         }
                         else {
                             Toast.makeText(getApplicationContext(),"No source to Delete",Toast.LENGTH_SHORT).show();

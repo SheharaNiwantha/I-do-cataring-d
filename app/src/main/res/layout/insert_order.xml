@@ -194,12 +194,12 @@
             <TextView
                 android:id="@+id/tvCal"
                 android:layout_width="155dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="29dp" />
 
             <Button
                 android:id="@+id/btnOrder"
                 android:layout_width="231dp"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#000"
                 android:text="@string/place_order"
