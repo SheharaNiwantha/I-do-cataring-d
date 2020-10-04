@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainMenu extends AppCompatActivity {
-
+    //create variables
     Button btn;
     Button btn1;
     Button btn2;
@@ -31,6 +31,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     @Override
+    //navigate interfaces
     protected void onResume() {
         super.onResume();
 
