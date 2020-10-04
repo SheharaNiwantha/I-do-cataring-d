@@ -21,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class InsertOrder extends AppCompatActivity {
 
+    //create variables
     EditText editTextName, editTextEmailAddress, editTextNumber, editTextMultiLineAddress, editTextNumberMenu, editTextNumberPlates, editTextDate, editTextTime;
     Button btnOrder, btnTotalPrice;
     DatabaseReference dbRef;
@@ -28,7 +29,7 @@ public class InsertOrder extends AppCompatActivity {
     TextView tvCal;
 
 
-
+//clear controls
     private void clearControls() {
         editTextName.setText("");
         editTextEmailAddress.setText("");
@@ -64,12 +65,13 @@ public class InsertOrder extends AppCompatActivity {
 
 
 
+        //insert data function
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("OrderDB");
 
-
+                //try catch function
                 try {
                     if (TextUtils.isEmpty(editTextName.getText().toString()))
                         Toast.makeText(getApplicationContext(), "Please enter a Name", Toast.LENGTH_SHORT).show();
@@ -101,18 +103,18 @@ public class InsertOrder extends AppCompatActivity {
                         dbRef.child("Order1").setValue(ord);
 
 
+                        //if data inserted successfully, display toast massage
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
-
-
+                        Intent intent= new Intent( InsertOrder.this, Payment.class);
+                        startActivity(intent);
 
 
                     }
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
-                    Intent intent= new Intent( InsertOrder.this, Payment.class);
-                    startActivity(intent);
+
 
                 }
 
@@ -122,6 +124,7 @@ public class InsertOrder extends AppCompatActivity {
         });
 
 
+        //calculation
         btnTotalPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

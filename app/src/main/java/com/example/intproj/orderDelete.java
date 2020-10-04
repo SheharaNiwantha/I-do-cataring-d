@@ -17,6 +17,7 @@ import com.google.firebase.database.DatabaseError;
 
 public class orderDelete extends AppCompatActivity {
 
+    //create variables
 
     Button btnDelete,btnNo;
     DatabaseReference dbDel;
@@ -29,11 +30,13 @@ public class orderDelete extends AppCompatActivity {
         btnDelete = findViewById(R.id.btnYes1);
         btnNo = findViewById(R.id.btnNo);
 
+        //delete function
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dbDel = FirebaseDatabase.getInstance().getReference().child("OrderDB");
                 dbDel.addListenerForSingleValueEvent(new ValueEventListener() {
+                    //delete data from database
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if (dataSnapshot.hasChild("Order1")){
