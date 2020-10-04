@@ -104,6 +104,9 @@ public class InsertOrder extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
+                        Intent intent2= new Intent( InsertOrder.this, MainMenu.class);
+                        startActivity(intent2);
+
 
                     }
                 } catch (NumberFormatException e) {
