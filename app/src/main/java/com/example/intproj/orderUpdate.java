@@ -19,6 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class orderUpdate extends AppCompatActivity {
 
+    //create variables
     EditText editTextName2, editTextEmailAddress2, editTextNumber2, editTextMultiLineAddress2, editTextNumberMenu2, editTextNumberPlates2, editTextDate2, editTextTime2;
     Button btnPre, btnUpdate;
     DatabaseReference dbRef, upRef;
@@ -44,11 +45,13 @@ public class orderUpdate extends AppCompatActivity {
 
         ord = new OrderDB();
 
+        //retrieve function
         btnPre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("OrderDB").child("Order1");
                 dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    //retrieve data from database
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if (dataSnapshot.hasChildren()){
@@ -76,6 +79,7 @@ public class orderUpdate extends AppCompatActivity {
             }
         });
 
+        //update function
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

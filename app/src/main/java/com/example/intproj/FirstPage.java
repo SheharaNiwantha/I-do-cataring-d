@@ -16,10 +16,14 @@ public class FirstPage extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 5000;
 
+    //create variables
     Animation topAnim, bottomAnim;
     ImageView image;
     TextView logo;
 
+
+
+    //create animation design
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
