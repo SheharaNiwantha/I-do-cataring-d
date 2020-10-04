@@ -85,6 +85,7 @@
         android:layout_marginEnd="103dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:text="Enter Email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -122,17 +123,17 @@
 
     <EditText
         android:id="@+id/Uname"
-        android:layout_width="190dp"
-        android:layout_height="51dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="199dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="@string/hintfname"
         android:inputType="textPersonName"
+        android:textColorLink="@color/common_google_signin_btn_text_light_pressed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColorLink="@color/common_google_signin_btn_text_light_pressed"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:layout_constraintVertical_bias="0.311" />
+        app:layout_constraintVertical_bias="0.312" />
 </androidx.constraintlayout.widget.ConstraintLayout>
