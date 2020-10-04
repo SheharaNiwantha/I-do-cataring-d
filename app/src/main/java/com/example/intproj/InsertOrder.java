@@ -104,14 +104,15 @@ public class InsertOrder extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
-                        Intent intent= new Intent( InsertOrder.this, Payment.class);
-                        startActivity(intent);
+
 
 
 
                     }
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
+                    Intent intent= new Intent( InsertOrder.this, Payment.class);
+                    startActivity(intent);
 
                 }
 
