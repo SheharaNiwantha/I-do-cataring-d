@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".orderDelete">
+    tools:context=".PaymentDelete">
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="126dp"
         android:background="#fece2f"
         android:padding="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-6dp">
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/logoImage"
@@ -29,59 +26,53 @@
             android:layout_height="94dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="3dp"
-            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="33dp"
             android:fontFamily="@font/bungee"
 
-            android:text="Delete order"
+            android:text="Delete Record"
             android:textColor="#000"
             android:textSize="30sp" />
-
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/tvDelete"
-        android:layout_width="349dp"
-        android:layout_height="119dp"
-        android:text="@string/msg"
+        android:id="@+id/tvDeleteMsg"
+        android:layout_width="341dp"
+        android:layout_height="58dp"
+        android:text="@string/tvDeleteMsg"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.35" />
 
     <Button
         android:id="@+id/btnNo"
-        android:layout_width="88dp"
-        android:layout_height="37dp"
-        android:text="No"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
+        android:text="No"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
         android:id="@+id/btnYes1"
-        android:layout_width="88dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
+        android:onClick="displayToast"
         android:text="Yes"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
-
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>

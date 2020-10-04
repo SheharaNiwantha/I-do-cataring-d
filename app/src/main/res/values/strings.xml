@@ -75,4 +75,9 @@
     <string name="sendb">Send</string>
     <string name="UpdateAB">Update</string>
     <string name="DeleteBA">Delete</string>
+    <string name="btnPay1">Pay</string>
+    <string name="tvDeleteMsg">Are you sure you want to delete record</string>
+    <string name="btnPay">Pay Now</string>
+    <string name="btnDeleteR">Delete</string>
+    <string name="tvRecent2">Recent</string>
 </resources>

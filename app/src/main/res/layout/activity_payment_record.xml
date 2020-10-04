@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".orders">
+    tools:context=".PaymentRecord">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,12 +13,12 @@
         android:background="#fece2f"
         android:padding="20dp">
 
-    <ImageView
-        android:id="@+id/logoImage"
-        android:layout_width="129dp"
-        android:layout_height="105dp"
-        android:contentDescription="TODO"
-        android:src="@drawable/meal" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="129dp"
+            android:layout_height="105dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/meal" />
     </RelativeLayout>
 
 
@@ -25,7 +26,7 @@
         android:id="@+id/tvRecent2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/recent"
+        android:text="@string/tvRecent2"
         android:textSize="18sp" />
 
     <LinearLayout
@@ -41,31 +42,21 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="122dp"
+            android:layout_width="227dp"
             android:layout_height="wrap_content"
-            android:text="02/10/2020"
+            android:text="1234567887654321"
             android:textAlignment="center"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnUpdate3"
-            android:layout_width="144dp"
+            android:id="@+id/btnDeleteR"
+            android:layout_width="173dp"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_button"
-
-            android:text="@string/update_order"
-            android:textAlignment="center"
             android:textColor="#000"
+            android:text="@string/btnDeleteR"
+
             android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/btnDelete3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_button"
-            android:textColor="#000"
-            android:textSize="18sp"
-            android:text="@string/cancel_order" />
 
     </LinearLayout>
 

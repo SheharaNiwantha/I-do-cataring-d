@@ -32,6 +32,10 @@
         <activity android:name=".InsertOrder" />
         <activity android:name=".Register" />
         <activity android:name=".feedback" />
+        <activity android:name=".PaymentRecord"/>
+        <activity android:name=".PaymentDelete" />
+        <activity android:name=".PayInsert"/>
+        <activity android:name=".Payment" />
 
         <meta-data
             android:name="preloaded_fonts"

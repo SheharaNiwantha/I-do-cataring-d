@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class Menu3 extends AppCompatActivity {
-
+    //create variables
     Button button12;
 
-
+    //navigate interfaces
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -10,12 +10,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainMenu extends AppCompatActivity {
-
+    //create variables
     Button btn;
     Button btn1;
     Button btn2;
 
-    ImageButton imageButton12, imageButton11, imageButton10;
+    ImageButton imageButton12, imageButton11, imageButton10, imageButton9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +28,12 @@ public class MainMenu extends AppCompatActivity {
         imageButton12 = findViewById(R.id.imageButton12);
         imageButton11 = findViewById(R.id.imageButton11);
         imageButton10 = findViewById(R.id.imageButton10);
+        imageButton9 = findViewById(R.id.imageButton9);
+
     }
 
     @Override
+    //navigate interfaces
     protected void onResume() {
         super.onResume();
 
@@ -79,6 +82,15 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent2= new Intent( MainMenu.this, feedback.class);
+
+                startActivity(intent2);
+
+            }
+        });
+        imageButton9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2= new Intent( MainMenu.this, PaymentRecord.class);
 
                 startActivity(intent2);
 

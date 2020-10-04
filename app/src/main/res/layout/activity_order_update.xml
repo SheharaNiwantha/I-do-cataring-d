@@ -299,10 +299,11 @@
             android:id="@+id/btnPre"
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:background="#000"
+            android:background="@drawable/custom_button"
+            android:textColor="#000"
             android:text="Preview Data"
             android:textAlignment="center"
-            android:textColor="#fff"
+
             android:textSize="18sp" />
 
 
@@ -310,11 +311,12 @@
             android:id="@+id/btnUpdate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#000"
+            android:background="@drawable/custom_button"
+            android:textColor="#000"
             android:onClick="displayToast"
             android:text="@string/BtnSave_changes"
             android:textAlignment="center"
-            android:textColor="#fff"
+
             android:textSize="18sp"
             tools:ignore="OnClick" />
 

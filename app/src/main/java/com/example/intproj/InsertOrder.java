@@ -104,10 +104,16 @@ public class InsertOrder extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Data Saved Successfully", Toast.LENGTH_SHORT).show();
                         clearControls();
 
+                        Intent intent= new Intent( InsertOrder.this, Payment.class);
+                        startActivity(intent);
+
+
 
                     }
                 } catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
+                    Intent intent= new Intent( InsertOrder.this, Payment.class);
+                    startActivity(intent);
 
                 }
 
@@ -125,14 +131,14 @@ public class InsertOrder extends AppCompatActivity {
 
                 if (menu == 1){
                 int sum = plates * 1400;
-                tvCal.setText("Total Price = RS: " + String.valueOf(sum));}
+                tvCal.setText("RS: " + String.valueOf(sum));}
                 else if(menu == 2){
                     int sum = plates * 1600;
-                    tvCal.setText("Total Price = RS: " + String.valueOf(sum));
+                    tvCal.setText("RS: " + String.valueOf(sum));
                 }
                 else if (menu == 3) {
                     int sum = plates * 2000;
-                    tvCal.setText("Total Price = RS: " + String.valueOf(sum));
+                    tvCal.setText("RS: " + String.valueOf(sum));
                 }
 
             }

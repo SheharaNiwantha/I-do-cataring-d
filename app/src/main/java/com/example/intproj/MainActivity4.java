@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity4 extends AppCompatActivity {
-
+        //create variables
         EditText txtMenu,txtFood,txtPrice;
         Button butsave,butshow,butupdate,butDelete;
         DatabaseReference dbRef;
@@ -37,6 +37,7 @@ public class MainActivity4 extends AppCompatActivity {
         butDelete=findViewById(R.id.btnDelete);
 
         Mname = new MenuName();
+        //data delete in database
 
         butDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +48,7 @@ public class MainActivity4 extends AppCompatActivity {
 
             }
         });
-
+        //data updated in database
         butupdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +60,7 @@ public class MainActivity4 extends AppCompatActivity {
                 clearControls();
             }
         });
-
+        //data retrive database
         butshow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,28 +85,37 @@ public class MainActivity4 extends AppCompatActivity {
                 });
             }
         });
-
+        //data insert into database
         butsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
             dbRef = FirebaseDatabase.getInstance().getReference().child("MenuName");
             try {
-                if (TextUtils.isEmpty(txtMenu.getText().toString()))
-                    Toast.makeText(getApplicationContext(),  "Empty Menu",Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(txtFood.getText().toString()))
-                    Toast.makeText(getApplicationContext(),  "Empty Food",Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(txtPrice.getText().toString()))
-                    Toast.makeText(getApplicationContext(),  "Empty Price",Toast.LENGTH_SHORT).show();
+                //using validation
+                if (txtMenu.length()==0) {
+                    if (TextUtils.isEmpty(txtMenu.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Empty Menu", Toast.LENGTH_SHORT).show();
+                }
+                else if (txtFood.length()==0) {
+                         if (TextUtils.isEmpty(txtFood.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Empty Food", Toast.LENGTH_SHORT).show();
+                }
+                else if (txtPrice.length()==0) {
+                    if (TextUtils.isEmpty(txtPrice.getText().toString()))
+                        Toast.makeText(getApplicationContext(), "Empty Price", Toast.LENGTH_SHORT).show();
+                }
                 else {
                     Mname.setMenu(txtMenu.getText().toString().trim());
                     Mname.setFood(txtFood.getText().toString().trim());
                     Mname.setPrice(Integer.parseInt( txtPrice.getText().toString().trim()));
                     dbRef.child("Mname1").setValue(Mname);
+                    //data insert successful display toat message
                     Toast.makeText(getApplicationContext(),"Successfull Inserted",Toast.LENGTH_SHORT).show();
                     clearControls();
                 }
             }
             catch (NumberFormatException nfe){
+                //data insert unsuccessful display toat message
                 Toast.makeText(getApplicationContext(),"Invalid",Toast.LENGTH_SHORT).show();
             }
 
