@@ -21,6 +21,7 @@ public class Register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
@@ -56,7 +57,7 @@ public class Register extends AppCompatActivity {
                         std.setPassword(txtPassword.getText().toString().trim());
                         std.setCpassword(txtCpassword.getText().toString().trim());
 
-                        dbref.child("Std1").setValue(std);
+                        dbref.child("1").setValue(std);
 
                         Toast.makeText(getApplicationContext(), "Successfully inserted ", Toast.LENGTH_SHORT).show();
                     }
